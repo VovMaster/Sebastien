@@ -1,23 +1,36 @@
-.main-width{
-	max-width: 1054px;
-	margin: auto;
-	padding: 0 15px;
+.title {
+	font-size: 22px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #fff;
 }
-.wrapper{
-	background-image: url(../images/background.jpg);
+.sub-title {
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #fff;
 }
-.clearfix:after {
-	content: " ";
-	display: table;
-	width: 100%;
-	clear: both;
+.line {
+	height: 10px;
+	width: 35px;
 }
-img{
-	margin: auto;
-	max-width: 100%;
-	display: block;
-	height: auto;
+.text {
+	color: #fff;
+	font-family: 'Merriweather';
+	line-height: normal;
+	padding-left: 58px;
+	> *:last-child {
+		margin-bottom: 0;
+	}
 }
-.bg-dark-blue{
-	background-color: #01435c;
+.text-color {
+	color: #646363;
+}
+.text-with-icon {
+	position: relative;
+	&:before {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
 }
