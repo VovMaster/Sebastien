@@ -1586,3 +1586,12 @@ img {
   left: 0;
   top: 0;
 }
+.wrap-dot {
+  padding: 24px 0;
+}
+.dot {
+  margin: auto;
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+}
