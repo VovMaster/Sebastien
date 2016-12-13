@@ -41,18 +41,59 @@ img{
 }
 
 
+/* icon sprite */
+[class*="sprite-"]:before { 
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-size: 33px auto;
+	content: " ";
+}
+.text-with-icon.sprite-pied:before {
+	background-position: 0 -2px;
+	height: 31px;
+	width: 34px;
+	left: -1px;
+	top: -8px;
+}
+.text-with-icon.sprite-voiture:before {
+	background-position: 0 -35px;
+	height: 27px;
+	width: 34px;
+	left: -1px;
+	top: -4px;
+}
+.text-with-icon.sprite-transports:before {
+	background-position: 0 -63px;
+	height: 40px;
+	width: 34px;
+	left: -1px;
+	top: -14px;
+}
+.text-with-icon.sprite-bus:before {
+	background-position: 0 -103px;
+	height: 33px;
+	width: 34px;
+	left: -1px;
+	top: -1px;
+}
+
 
 /* color */
 
 .color-primary {
 	color: #01435c !important;
 }
-
+.color-second {
+	color: #ceb296 !important;
+}
 
 
 /* background */
 .bg-white {
 	background-color: rgba(255, 255, 255, 0.8) !important;
+}
+.bg-gray {
+	background-color: #f9f9f9 !important;
 }
 .bg-primary{
 	background-color: #01435c !important;
@@ -70,19 +111,59 @@ img{
 /* padding */
 .padding-style1 {
 	padding: 15px;
-	background-size: cover;
-	background-position: 50% 50%;
-	position: relative;
 }
 .padding-style2 {
-	padding: 15px;
-	background-size: cover;
-	background-position: 50% 50%;
-	position: relative;
+	padding: 58px 74px 25px 28px;
+	.title {
+		margin-right: -50px;
+	}
 }
 .padding-style {
-	padding: 15px;
+	padding: 40px 43px;
+}
+
+/* text-align */
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+
+
+.img-cover {
 	background-size: cover;
 	background-position: 50% 50%;
 	position: relative;
+	background-repeat: no-repeat;
+}
+
+
+/* letter-spasing */
+.letter-spacing40 {
+	letter-spacing: 0.04em !important;
+}
+.letter-spacing60 {
+	letter-spacing: 0.06em !important;
+}
+
+/* row */
+.row7 {
+	margin-left: -7px;
+	margin-right: -7px;
+	> * {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+}
+
+/* margin */
+
+@media (min-width: 768px) {
+	.margin-top-sm0 {
+		margin-top: 0 !important;
+	}
 }
