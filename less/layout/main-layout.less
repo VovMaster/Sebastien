@@ -252,8 +252,93 @@
 .form-group{
 	.icon{
 		position: absolute;
-		top: 10px;
+		top: 9px;
 		right: 12px;
 		color: #dfdfdf;
 	}
+	.icon-mail{
+		font-size: 10px;
+		top: 12px;
+	}
+	.triangle{
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 6px solid #dfdfdf;
+		top: 15px;
+	}
 }
+.has-complete{
+	.form-control{
+		 border-color: #e1e1e1;
+		 color: #707070;
+		 + .icon{
+		 	color: #707070;
+		 }
+	}
+}
+.form-text{
+	font-size: 12px;
+	line-height: 14px;
+	color: #6d757a;
+	text-align: right;
+	margin: -7px 0 1px;
+	font-size: 12px;
+	.note{
+		font-size: 24px;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 5px;
+		line-height: 14px;
+	}
+}
+/*--------------------------TABLE-----------------------------*/
+.table-style{
+	> .row{
+		margin-top: 13px;
+		margin-bottom: 13px;
+	}
+}
+.table-title{
+	background-color: #01435c;
+	font-size: 22px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 16.5px 29px;
+	letter-spacing: 3px;
+}
+.sub-table-title{
+	color: #646363;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 300;
+	padding: 18px 0;
+	letter-spacing: 1.8px;
+	position: relative;
+	min-height: 45px;
+}
+.content-table{
+	font-size: 16px;
+	color: #01435c;
+	text-align: center;
+	text-transform: uppercase;
+	min-height: 53px;
+}
+
+
+@media (min-width: 768px) {
+	.table-style {
+		> .row > *:nth-child(2) {
+			border-left: 1px solid #01435c;
+			border-right: 1px solid #01435c;
+		}
+	}
+	.sub-table-title{
+		border-bottom: 1px solid #01435c;
+	}
+}
+
+/*-----------------------END TABLE-----------------------------*/
