@@ -1,15 +1,10 @@
 $(document).ready(function() {
-	$('.fade').slick({
+	$('.slider').slick({
 	  dots: true,
 	  infinite: true,
-	  speed: 500,
-	  fade: true,
-	  /*cssEase: 'linear'*/
+	  speed: 500
 	});
-	/*$(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1
-    });*/
+   $(".fancybox").fancybox({
+   	padding: 0
+   });
 });
